@@ -5,14 +5,14 @@
 <br />
 <div align="center" id='topo'>
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="src/assets/logo_1.svg" alt="Logo" width="200" height="200">
+    <img src="src/assets/imgLogo.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">SociaLinks</h3>
 
   <p align="center">
     <br />
-    <a href="" target="_blank" rel="noreferrer">Demo do projeto</a>
+    <a href="https://dramaryjane.netlify.app/" target="_blank" rel="noreferrer">Demo do projeto</a>
   </p>
 </div>
 

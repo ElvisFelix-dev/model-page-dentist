@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useMemo } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 
+import './map.css'
+
 const Map = () => {
   const mapRef = useRef(null)
 

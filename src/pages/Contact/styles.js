@@ -29,7 +29,6 @@ export const ContactInfoContainer = styled.div`
   padding: 30px;
   margin: 30px;
   border-radius: 10px;
-  background-color: #f2f2f2;
   text-align: center;
 
   h1 {

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useMemo } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-
-import './map.css'
+import { GrLocationPin } from 'react-icons/gr'
 
 const Map = () => {
   const mapRef = useRef(null)
@@ -16,17 +16,25 @@ const Map = () => {
     }
   }, [position])
 
+  // Define o ícone personalizado para o marcador
+  const markerIcon = new L.Icon({
+    iconUrl: './imglocal.svg',
+    iconSize: [32, 32],
+    iconAnchor: [16, 32],
+    popupAnchor: [0, -32],
+  })
+
   return (
     <MapContainer
       center={position}
-      zoom={45}
+      zoom={13}
       scrollWheelZoom={false}
       style={{ height: '298px', width: '100%' }}
       ref={mapRef}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Marker position={position}>
-        <Popup>Um marcador qualquer</Popup>
+        <Popup>Clinica Dra Mary Jane</Popup>
       </Marker>
     </MapContainer>
   )

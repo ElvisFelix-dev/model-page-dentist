@@ -18,7 +18,7 @@ const Map = () => {
 
   // Define o ícone personalizado para o marcador
   const markerIcon = new L.Icon({
-    iconUrl: './imglocal.svg',
+    iconUrl: '/imglocal.png',
     iconSize: [32, 32],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32],
@@ -33,7 +33,7 @@ const Map = () => {
       ref={mapRef}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Marker position={position}>
+      <Marker position={position} icon={markerIcon}>
         <Popup>Clinica Dra Mary Jane</Popup>
       </Marker>
     </MapContainer>

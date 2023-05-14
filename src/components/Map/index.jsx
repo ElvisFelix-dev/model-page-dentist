@@ -33,7 +33,7 @@ const Map = () => {
       ref={mapRef}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Marker position={position}>
+      <Marker position={position} icon={markerIcon}>
         <Popup>Clinica Dra Mary Jane</Popup>
       </Marker>
     </MapContainer>

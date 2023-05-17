@@ -4,7 +4,7 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { GrLocationPin } from 'react-icons/gr'
 
-import './map.css'
+// import './map.css'
 
 const Map = () => {
   const mapRef = useRef(null)
@@ -31,11 +31,11 @@ const Map = () => {
       center={position}
       zoom={15}
       scrollWheelZoom={false}
-      style={{ height: '298px', width: '100%' }}
+      style={{ height: '400px', width: '100%' }}
       ref={mapRef}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Marker position={position}>
+      <Marker position={position} icon={markerIcon}>
         <Popup>Clinica Dra Mary Jane</Popup>
       </Marker>
     </MapContainer>

@@ -8,83 +8,58 @@ export const Container = styled.div`
   height: 100%;
 `
 
-export const ContactContainer = styled.div`
+export const ContactPageContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  h2 {
-    padding-bottom: 35px;
-    color: #2c5282;
-  }
+  justify-content: space-between;
+  align-items: flex-start;
 `
 
 export const ContactInfoContainer = styled.div`
-  max-width: 800px;
-  padding: 30px;
-  margin: 30px;
-  border-radius: 10px;
-  text-align: center;
+  width: 50%;
+  padding-left: 80px;
 
-  h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #2c5282;
+  h2 {
+    margin-bottom: 25px;
   }
 
-  p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #2c5282;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
-`
 
-export const ContactItemContainer = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  text-align: left;
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 
-  & > div {
-    margin-left: 20px;
+  svg {
+    margin-right: 10px;
   }
 `
 
-export const ContactIcon = styled.i`
-  font-size: 24px;
-  color: #3f51b5;
-`
+export const SocialLinks = styled.div`
+  h3 {
+    padding-top: 25px;
+  }
 
-export const ContactLabel = styled.div`
-  font-weight: bold;
-  margin-bottom: 5px;
-`
-
-export const ContactText = styled.div`
-  font-size: 16px;
+  svg {
+    margin-right: 10px;
+    margin-top: 15px;
+  }
 `
 
 export const MapContainer = styled.div`
-  height: 300px;
-  width: 100%;
-  padding: 10px;
-`
+  width: 50%;
+  height: 500px;
+  margin-right: 10px;
 
-export const ContactSocialLinks = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  svg {
-    margin-left: 15px;
-    margin-bottom: 15px;
-    color: #3f51b5;
-
-    transition: color 0.2s;
+  h2 {
+    margin-bottom: 20px;
   }
 
-  svg:hover {
-    color: ${shade(0.2, '#3f51b5')};
+  p {
+    margin-bottom: 20px;
   }
 `

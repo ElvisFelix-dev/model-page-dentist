@@ -1,14 +1,10 @@
 import { Link } from 'react-router-dom'
 import {
   Container,
-  ContactContainer,
   ContactInfoContainer,
-  ContactItemContainer,
-  ContactIcon,
-  ContactLabel,
-  ContactText,
-  ContactSocialLinks,
+  ContactPageContainer,
   MapContainer,
+  SocialLinks,
 } from './styles'
 
 import {
@@ -17,8 +13,11 @@ import {
   FaEnvelope,
   FaFacebook,
   FaInstagram,
+  FaTwitter,
   FaYoutube,
   FaTiktok,
+  FaPhone,
+  FaWhatsapp,
 } from 'react-icons/fa'
 
 import Map from '../../components/Map'
@@ -29,67 +28,41 @@ export function Contact() {
     <>
       <Container>
         <NavBar />
-        <ContactContainer>
+        <ContactPageContainer>
           <ContactInfoContainer>
-            <h1>Entre em contato</h1>
-            <p>
-              Se você tem alguma dúvida, sugestão ou quer agendar uma consulta,
-              entre em contato conosco pelos meios abaixo.
-            </p>
-            <ContactItemContainer>
-              <ContactIcon>
+            <h2>Informações de Contato</h2>
+            <ul>
+              <li>
                 <FaMapMarkerAlt />
-              </ContactIcon>
-              <div>
-                <ContactLabel>Endereço</ContactLabel>
-                <ContactText>Rua dos Dentistas, 123</ContactText>
-                <ContactText>Bairro dos Sorrisos - São Paulo/SP</ContactText>
-              </div>
-            </ContactItemContainer>
-
-            <ContactItemContainer>
-              <ContactIcon>
-                <FaPhoneAlt />
-              </ContactIcon>
-              <div>
-                <ContactLabel>Telefone</ContactLabel>
-                <ContactText>(11) 5555-5555</ContactText>
-                <ContactText>(11) 5555-5555</ContactText>
-              </div>
-            </ContactItemContainer>
-
-            <ContactItemContainer>
-              <ContactIcon>
+                <span>Endereço: Rua Exemplo, 1234 - Cidade, Estado</span>
+              </li>
+              <li>
+                <FaPhone />
+                <span>Telefone: (12) 3456-7890</span>
+              </li>
+              <li>
+                <FaWhatsapp />
+                <span>WhatsApp: (12) 98765-4321</span>
+              </li>
+              <li>
                 <FaEnvelope />
-              </ContactIcon>
-              <div>
-                <ContactLabel>Email</ContactLabel>
-                <ContactText>contato@maryjanedentista.com.br</ContactText>
-              </div>
-            </ContactItemContainer>
+                <span>Email: contato@example.com</span>
+              </li>
+            </ul>
+            <SocialLinks>
+              <h3>Siga-nos em nossas redes sociais</h3>
+              <FaFacebook size={20} />
+              <FaInstagram size={20} />
+              <FaTwitter size={20} />
+            </SocialLinks>
           </ContactInfoContainer>
-          <h2>Acompanhe-nos nas redes sociais</h2>
-        </ContactContainer>
-        <ContactSocialLinks>
-          <Link to="/">
-            <FaFacebook size={25} />
-          </Link>
+          <MapContainer>
+            <h2>Como nos encontrar</h2>
 
-          <Link to="/">
-            <FaInstagram size={25} />
-          </Link>
-
-          <Link to="/">
-            <FaYoutube size={25} />
-          </Link>
-
-          <Link to="/">
-            <FaTiktok size={30} />
-          </Link>
-        </ContactSocialLinks>
-        <MapContainer>
-          <Map />
-        </MapContainer>
+            <p> &#8226; Ficamos proximos á Praça da Matriz</p>
+            <Map />
+          </MapContainer>
+        </ContactPageContainer>
       </Container>
     </>
   )

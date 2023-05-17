@@ -46,7 +46,7 @@ export function About() {
               saúde bucal ideal para seus pacientes.
             </AboutDescription>
             <AboutDescription>
-              Dr. Jane é especialista em uma ampla gama de tratamentos
+              Dra Mary Jane é especialista em uma ampla gama de tratamentos
               dentários, incluindo odontologia geral, odontologia estética e
               odontologia restauradora. Ela se mantém atualizada com os últimos
               avanços na odontologia e utiliza tecnologia de ponta para oferecer
@@ -68,16 +68,33 @@ export function About() {
                 <AboutPhoto
                   src={imgLab}
                   alt="Clinic Photo 1"
+                  title="Bem-estar e conforto para nossos pacientes"
                   onClick={() => openModal(`${imgLab}`)}
                 />
-                <AboutPhotoText>Texto da Foto 1</AboutPhotoText>
+                <AboutPhotoText>
+                  A clínica da Dra. Mary Jane é um ambiente moderno e acolhedor,
+                  projetado com o conforto e bem-estar dos pacientes em mente.{' '}
+                  <br />
+                  <br />
+                  Investimos em equipamentos de última geração para oferecer
+                  tratamentos odontológicos de alta qualidade e precisão.
+                </AboutPhotoText>
               </AboutPhotoItem>
 
               <AboutPhotoItem>
-                <AboutPhotoText>Texto da Foto 2</AboutPhotoText>
+                <AboutPhotoText>
+                  Priorizamos um atendimento de excelência e personalizado.
+                  <br />
+                  <br />
+                  Nossa equipe de profissionais qualificados está comprometida
+                  em proporcionar uma experiência única aos nossos pacientes,
+                  desde o momento em que entram na clínica até o término do
+                  tratamento.{' '}
+                </AboutPhotoText>
                 <AboutPhoto
                   src={imgWomam}
                   alt="Clinic Photo 2"
+                  title="Tratamento personalizado"
                   onClick={() => openModal(`${imgWomam}`)}
                 />
               </AboutPhotoItem>
@@ -86,16 +103,36 @@ export function About() {
                 <AboutPhoto
                   src={imgOffice}
                   alt="Clinic Photo 3"
+                  title="Equipamentos modernos"
                   onClick={() => openModal(`${imgOffice}`)}
                 />
-                <AboutPhotoText>Texto da Foto 3</AboutPhotoText>
+                <AboutPhotoText>
+                  Nossos equipamentos avançados nos permitem realizar
+                  procedimentos modernos e minimamente invasivos, garantindo
+                  resultados eficientes e seguros.
+                  <br />
+                  <br />
+                  Venha conhecer a nossa clínica e experimente o que há de mais
+                  moderno na odontologia.
+                </AboutPhotoText>
               </AboutPhotoItem>
 
               <AboutPhotoItem>
-                <AboutPhotoText>Texto da Foto 4</AboutPhotoText>
+                <AboutPhotoText>
+                  Nossos dentistas são atenciosos, empáticos e dedicados a
+                  entender as necessidades e desejos de cada paciente,
+                  oferecendo soluções personalizadas e cuidados de alta
+                  qualidade.
+                  <br />
+                  <br />
+                  Se você busca um atendimento odontológico diferenciado, venha
+                  nos visitar e confira o que a Dra. Mary Jane e sua equipe têm
+                  a oferecer.
+                </AboutPhotoText>
                 <AboutPhoto
                   src={imgPatient}
                   alt="Clinic Photo 3"
+                  title="Atentimento cuidadoso"
                   onClick={() => openModal(`${imgPatient}`)}
                 />
               </AboutPhotoItem>
@@ -107,7 +144,16 @@ export function About() {
                   title="Dra Mary Jane"
                   onClick={() => openModal(`${imgDentist}`)}
                 />
-                <AboutPhotoText>Texto da Foto 4</AboutPhotoText>
+                <AboutPhotoText>
+                  Olá! Sou a Dra. Mary Jane e é um imenso prazer trabalhar na
+                  área odontológica. Desde cedo, descobri minha paixão por
+                  cuidar da saúde bucal das pessoas e transformar sorrisos.
+                  <br />
+                  <br />
+                  Acredito que a odontologia vai além do tratamento dos dentes,
+                  pois está diretamente ligada à autoestima, confiança e
+                  qualidade de vida dos meus pacientes.{' '}
+                </AboutPhotoText>
               </AboutPhotoItem>
             </AboutPhotosSection>
           </ContainerPhotos>

@@ -12,25 +12,25 @@ export function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <FaInstagram size={20} color="#d80d30" />
+            <FaInstagram size={20} color="#2c5282" />
           </a>
           <a
             href="https://twitter.com/elvis__felix"
             target="_blank"
             rel="noreferrer"
           >
-            <FaTwitter size={20} color="#d80d30" />
+            <FaTwitter size={20} color="#2c5282" />
           </a>
           <a
             href="https://wa.me/5516996318063"
             target="_blank"
             rel="noreferrer"
           >
-            <FaWhatsapp size={20} color="#d80d30" />
+            <FaWhatsapp size={20} color="#2c5282" />
           </a>
         </div>
         <p className="footer__copyright">
-          Desenvolvido por 4System <FaHeart size={10} color="#d80d30" />
+          Desenvolvido por 2System <FaHeart size={10} color="#2c5282" />
         </p>
       </footer>
     </>

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { shade } from 'polished'
 
 export const Container = styled.div`
-  background: linear-gradient(135deg, #8fbbea, #ffffff);
+  background: linear-gradient(135deg, #ffffff, #8fbbea);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -13,8 +13,6 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  padding-top: 3rem;
 
   h2 {
     padding-bottom: 35px;
@@ -70,7 +68,7 @@ export const ContactText = styled.div`
 export const MapContainer = styled.div`
   height: 300px;
   width: 100%;
-  padding: 8px;
+  padding: 10px;
 `
 
 export const ContactSocialLinks = styled.div`

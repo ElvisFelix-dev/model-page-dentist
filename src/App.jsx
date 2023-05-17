@@ -5,6 +5,8 @@ import { About } from './pages/About'
 import { Contact } from './pages/Contact'
 import { Service } from './pages/Service'
 
+import { Footer } from './components/Footer'
+
 export function App() {
   return (
     <>
@@ -15,6 +17,7 @@ export function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )

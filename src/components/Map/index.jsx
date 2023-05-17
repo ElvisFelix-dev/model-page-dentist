@@ -29,7 +29,7 @@ const Map = () => {
   return (
     <MapContainer
       center={position}
-      zoom={13}
+      zoom={15}
       scrollWheelZoom={false}
       style={{ height: '298px', width: '100%' }}
       ref={mapRef}

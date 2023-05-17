@@ -6,9 +6,14 @@ import {
   AboutTitle,
   AboutPhoto,
   AboutPhotosSection,
+  AboutPhotoItem,
+  AboutPhotoText,
+  ContainerPhotos,
+  Container,
 } from './styles'
 
 import { Modal } from '../../components/Modal'
+import { NavBar } from '../../components/NavBar'
 
 import imgLab from '../../assets/imgLab.png'
 import imgWomam from '../../assets/imgWomam.png'
@@ -28,64 +33,92 @@ export function About() {
   }
   return (
     <>
-      <AboutContainer>
-        <AboutContent>
-          <AboutTitle>About Mary Jane, DDS</AboutTitle>
-          <AboutDescription>
-            Dr. Mary Jane is a highly skilled and experienced dentist dedicated
-            to providing exceptional dental care to her patients. With over 10
-            years of experience in the field, she has a passion for creating
-            beautiful smiles and ensuring optimal oral health for her patients.
-          </AboutDescription>
-          <AboutDescription>
-            Dr. Jane specializes in a wide range of dental treatments, including
-            general dentistry, cosmetic dentistry, and restorative dentistry.
-            She stays up-to-date with the latest advancements in dentistry and
-            utilizes state-of-the-art technology to deliver the best possible
-            outcomes for her patients.
-          </AboutDescription>
-          <AboutDescription>
-            Patients appreciate Dr. Jane's gentle approach, attention to detail,
-            and ability to create a comfortable and relaxed environment during
-            their dental visits. She takes the time to listen to her patients'
-            concerns and educates them about their oral health, empowering them
-            to make informed decisions about their dental care.
-          </AboutDescription>
-        </AboutContent>
+      <Container>
+        <NavBar />
+        <AboutContainer>
+          <AboutContent>
+            <AboutTitle>Prazer, Dra Mary Jane</AboutTitle>
+            <AboutDescription>
+              A Dra. Mary Jane é uma dentista altamente qualificada e
+              experiente, dedicada a fornecer atendimento odontológico
+              excepcional a seus pacientes. Com mais de 10 anos de experiência
+              na área, ela tem paixão por criar belos sorrisos e garantir a
+              saúde bucal ideal para seus pacientes.
+            </AboutDescription>
+            <AboutDescription>
+              Dr. Jane é especialista em uma ampla gama de tratamentos
+              dentários, incluindo odontologia geral, odontologia estética e
+              odontologia restauradora. Ela se mantém atualizada com os últimos
+              avanços na odontologia e utiliza tecnologia de ponta para oferecer
+              os melhores resultados possíveis para seus pacientes.
+            </AboutDescription>
+            <AboutDescription>
+              Os pacientes apreciam a abordagem gentil da Dra. Jane, a atenção
+              aos detalhes e a capacidade de criar um ambiente confortável e
+              descontraído durante suas consultas odontológicas. Ela toma o
+              tempo para ouvi-la. preocupa e os educa sobre sua saúde bucal,
+              capacitando-os a tomar decisões informadas sobre seus cuidados
+              odontológicos.
+            </AboutDescription>
+          </AboutContent>
 
-        <AboutPhotosSection>
-          <AboutPhoto
-            src={imgLab}
-            alt="Clinic Photo 1"
-            onClick={() => openModal(`${imgLab}`)}
+          <ContainerPhotos>
+            <AboutPhotosSection>
+              <AboutPhotoItem>
+                <AboutPhoto
+                  src={imgLab}
+                  alt="Clinic Photo 1"
+                  onClick={() => openModal(`${imgLab}`)}
+                />
+                <AboutPhotoText>Texto da Foto 1</AboutPhotoText>
+              </AboutPhotoItem>
+
+              <AboutPhotoItem>
+                <AboutPhotoText>Texto da Foto 2</AboutPhotoText>
+                <AboutPhoto
+                  src={imgWomam}
+                  alt="Clinic Photo 2"
+                  onClick={() => openModal(`${imgWomam}`)}
+                />
+              </AboutPhotoItem>
+
+              <AboutPhotoItem>
+                <AboutPhoto
+                  src={imgOffice}
+                  alt="Clinic Photo 3"
+                  onClick={() => openModal(`${imgOffice}`)}
+                />
+                <AboutPhotoText>Texto da Foto 3</AboutPhotoText>
+              </AboutPhotoItem>
+
+              <AboutPhotoItem>
+                <AboutPhotoText>Texto da Foto 4</AboutPhotoText>
+                <AboutPhoto
+                  src={imgPatient}
+                  alt="Clinic Photo 3"
+                  onClick={() => openModal(`${imgPatient}`)}
+                />
+              </AboutPhotoItem>
+
+              <AboutPhotoItem>
+                <AboutPhoto
+                  src={imgDentist}
+                  alt="Dr. Mary Jane Photo"
+                  title="Dra Mary Jane"
+                  onClick={() => openModal(`${imgDentist}`)}
+                />
+                <AboutPhotoText>Texto da Foto 4</AboutPhotoText>
+              </AboutPhotoItem>
+            </AboutPhotosSection>
+          </ContainerPhotos>
+
+          <Modal
+            isOpen={!!selectedPhoto}
+            selectedPhoto={selectedPhoto}
+            closeModal={closeModal}
           />
-          <AboutPhoto
-            src={imgWomam}
-            alt="Clinic Photo 2"
-            onClick={() => openModal(`${imgWomam}`)}
-          />
-          <AboutPhoto
-            src={imgOffice}
-            alt="Clinic Photo 3"
-            onClick={() => openModal(`${imgOffice}`)}
-          />
-          <AboutPhoto
-            src={imgPatient}
-            alt="Clinic Photo 3"
-            onClick={() => openModal(`${imgPatient}`)}
-          />
-          <AboutPhoto
-            src={imgDentist}
-            alt="Dr. Mary Jane Photo"
-            onClick={() => openModal(`${imgDentist}`)}
-          />
-        </AboutPhotosSection>
-        <Modal
-          isOpen={!!selectedPhoto}
-          selectedPhoto={selectedPhoto}
-          closeModal={closeModal}
-        />
-      </AboutContainer>
+        </AboutContainer>
+      </Container>
     </>
   )
 }

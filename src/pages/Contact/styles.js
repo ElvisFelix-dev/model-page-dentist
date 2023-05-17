@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 import { shade } from 'polished'
 
-import imgBg from '../../assets/imgBg.png'
-
 export const Container = styled.div`
-  background-image: url(${imgBg});
+  background: linear-gradient(135deg, #8fbbea, #ffffff);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
 `
 
 export const ContactContainer = styled.div`

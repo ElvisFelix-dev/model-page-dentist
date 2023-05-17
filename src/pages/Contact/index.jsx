@@ -22,34 +22,13 @@ import {
 } from 'react-icons/fa'
 
 import Map from '../../components/Map'
+import { NavBar } from '../../components/NavBar'
 
 export function Contact() {
   return (
     <>
       <Container>
-        <header className="nav">
-          <Link to="/">
-            <div id="home" className="logo"></div>
-          </Link>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/services">Serviços</Link>
-              </li>
-              <li>
-                <Link to="/about">Sobre</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contato</Link>
-              </li>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-            </ul>
-          </nav>
-          <div className="clear"></div>
-        </header>
-
+        <NavBar />
         <ContactContainer>
           <ContactInfoContainer>
             <h1>Entre em contato</h1>

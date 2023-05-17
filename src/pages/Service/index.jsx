@@ -1,9 +1,13 @@
-import './styles.css'
+import { Container } from './styles'
+
+import { NavBar } from '../../components/NavBar'
 
 export function Service() {
   return (
     <>
-      <h1>Service</h1>
+      <Container>
+        <NavBar />
+      </Container>
     </>
   )
 }

@@ -31,7 +31,12 @@ const Map = () => {
       center={position}
       zoom={15}
       scrollWheelZoom={false}
-      style={{ height: '400px', width: '100%' }}
+      style={{
+        height: '400px',
+        width: '100%',
+        maxHeight: '1200px',
+        margin: '0 auto',
+      }}
       ref={mapRef}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

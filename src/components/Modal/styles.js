@@ -21,6 +21,10 @@ export const ModalImage = styled.img`
   padding: 4em 2em;
   background-color: #181c2e;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+  }
 `
 
 export const CloseButton = styled.button`
@@ -36,4 +40,9 @@ export const CloseButton = styled.button`
   border: none;
 
   outline: none;
+
+  @media (max-width: 768px) {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
 `

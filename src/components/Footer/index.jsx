@@ -8,19 +8,13 @@ export function Footer() {
       <footer className="footer">
         <div className="footer__social">
           <a
-            href="https://www.instagram.com/eyesgreen_tech/"
+            href="https://www.instagram.com/2system_dev/"
             target="_blank"
             rel="noreferrer"
           >
             <FaInstagram size={20} color="#2c5282" />
           </a>
-          <a
-            href="https://twitter.com/elvis__felix"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaTwitter size={20} color="#2c5282" />
-          </a>
+
           <a
             href="https://wa.me/5516996318063"
             target="_blank"

@@ -5,45 +5,6 @@ div .container {
   height: 100vh;
 }
 
-header nav {
-  float: left;
-}
-
-header nav ul {
-  list-style: none;
-}
-
-header nav li {
-  float: right;
-  padding: 15px 20px;
-}
-
-header li a {
-  color: #2C5282;
-  text-decoration: none;
-
-  transition: 1s;
-}
-
-header li a:hover {
-  color:  #0e1e35;
-  font-size: 19px;
-}
-
-header .logo {
-  align-items: center;
-  float: right;
-  margin-right: 8rem;
-  margin-top: 5px;
-
-  width: 50px;
-  height: 50px;
-
-  background-size: cover;
-  background-position: center;
-  background-image: url('../../assets/imgLogo.png');
-}
-
 aside  {
   display: flex;
   flex-direction: column;
@@ -89,6 +50,23 @@ aside button {
 aside button:hover {
   background-color: #2C5282;
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  div .container {
+    background-image: url('../../assets/imgBg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  aside {
+    padding-right: 2rem; /* Reduzindo o padding para telas menores */
+  }
+
+  aside h1 {
+    font-size: 3rem; /* Reduzindo o tamanho do título para telas menores */
+  }
 }
 
 

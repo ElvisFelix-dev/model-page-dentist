@@ -16,7 +16,9 @@ export function Home() {
             odontologia, você está no lugar certo.
           </p>
 
-          <button>Saber Mais</button>
+          <Link to="/about">
+            <button>Saber Mais</button>
+          </Link>
         </aside>
       </div>
     </>

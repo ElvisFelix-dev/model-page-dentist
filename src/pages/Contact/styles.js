@@ -12,6 +12,16 @@ export const ContactPageContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 1400px) {
+    /* Estilos para telas grandes com largura mínima de 1200px */
+    justify-content: center;
+  }
 `
 
 export const ContactInfoContainer = styled.div`
@@ -48,6 +58,30 @@ export const ContactInfoContainer = styled.div`
 
     background-color: #2c5282;
     color: #fff;
+
+    &:hover {
+      background: ${shade(0.2, '#2c5282')};
+    }
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+
+    @media (min-width: 1200px) {
+      /* Estilos para telas grandes com largura mínima de 1200px */
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    /* Estilos para telas grandes com largura mínima de 1200px */
+    padding-left: 120px;
   }
 `
 
@@ -68,6 +102,10 @@ export const TextArea = styled.div`
     resize: none;
 
     border-radius: 8px;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
 
   button {
@@ -79,6 +117,14 @@ export const TextArea = styled.div`
 
     background-color: #2c5282;
     color: #fff;
+
+    &:hover {
+      background: ${shade(0.2, '#2c5282')};
+    }
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
 `
 
@@ -107,5 +153,16 @@ export const MapContainer = styled.div`
 
   p {
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    width: 95%;
+    margin-right: 0;
+  }
+
+  @media (min-width: 1200px) {
+    /* Estilos para telas grandes com largura mínima de 1200px */
+    width: 60%;
+    height: 800px;
   }
 `

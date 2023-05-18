@@ -63,20 +63,22 @@ export function Contact() {
 
             {showMessageForm ? (
               <TextArea>
-                <textarea
-                  id="mensage"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Digite sua mensagem, juntamento com seu nome"
-                  title="Digite sua mensagem"
-                />
+                <form action="mailto:contato@exemplo.com">
+                  <textarea
+                    id="mensage"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Digite sua mensagem, juntamento com seu nome"
+                    title="Digite sua mensagem"
+                  />
 
-                <Link to="mailto:contato@exemplo.com">
-                  <button onClick={handleSendMessage}>
-                    <FaPaperPlane />
-                    Enviar Mensagem
-                  </button>
-                </Link>
+                  <Link>
+                    <button type="submit" onClick={handleSendMessage}>
+                      <FaPaperPlane />
+                      Enviar Mensagem
+                    </button>
+                  </Link>
+                </form>
               </TextArea>
             ) : (
               <button onClick={() => setShowMessageForm(true)}>

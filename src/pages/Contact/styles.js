@@ -91,6 +91,11 @@ export const TextArea = styled.div`
 
   margin-top: 20px;
 
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
   textarea {
     border: 1px solid rgb(200, 200, 200);
     width: 70%;

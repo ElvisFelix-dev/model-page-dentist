@@ -83,7 +83,7 @@ export function Contact() {
             ) : (
               <button onClick={() => setShowMessageForm(true)}>
                 <FaPaperPlane />
-                Mandar Mensagem
+                Enviar Mensagem
               </button>
             )}
 

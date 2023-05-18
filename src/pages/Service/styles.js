@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { shade } from 'polished'
 
 export const Container = styled.div`
   background: linear-gradient(135deg, #ffffff, #8fbbea);
@@ -19,6 +20,7 @@ export const ServicesContainer = styled.div`
 export const ServicesTitle = styled.h1`
   font-weight: bold;
   margin-bottom: 16px;
+  color: #2c5282;
 `
 
 export const ServicesDescription = styled.p`
@@ -66,6 +68,7 @@ export const CardTitle = styled.h3`
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 8px;
+  color: #2c5282;
 `
 
 export const CardDescription = styled.p`
@@ -73,11 +76,31 @@ export const CardDescription = styled.p`
   margin-bottom: 16px;
 `
 
-export const Button = styled.button`
+export const Button = styled.a`
   background-color: #4a90e2;
   color: #ffffff;
   padding: 8px 16px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
+
+  font-size: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    background: ${shade(0.2, '#4a90e2')};
+  }
+
+  &:hover svg {
+    margin-left: 10px;
+  }
+`
+
+export const ButtonText = styled.span`
+  margin-right: 5px;
 `

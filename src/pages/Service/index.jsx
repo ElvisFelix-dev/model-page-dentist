@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import {
   Container,
   CardTitle,
@@ -9,7 +11,10 @@ import {
   ServicesContainer,
   ServicesTitle,
   ServicesDescription,
+  ButtonText,
 } from './styles'
+
+import { FaArrowRight } from 'react-icons/fa'
 
 import { NavBar } from '../../components/NavBar'
 import imgLab from '../../assets/imgLab.png'
@@ -37,7 +42,12 @@ export function Service() {
               preventivas, limpezas, remoção de tártaro, entre outros
               procedimentos.
             </CardDescription>
-            <Button>Saber mais</Button>
+            <Link to="https://wa.me/" target="_blank" rel="noreferrer">
+              <Button>
+                <ButtonText>Saber mais</ButtonText>
+                <FaArrowRight />
+              </Button>
+            </Link>
           </CardContainer>
 
           <CardContainer>
@@ -49,7 +59,12 @@ export function Service() {
               idades podem corrigir o posicionamento dos dentes e ossos faciais,
               tornando o sorriso mais harmônico e funcional.
             </CardDescription>
-            <Button>Saber mais</Button>
+            <Link to="https://wa.me/" target="_blank" rel="noreferrer">
+              <Button>
+                <ButtonText>Saber mais</ButtonText>
+                <FaArrowRight />
+              </Button>
+            </Link>
           </CardContainer>
 
           <CardContainer>
@@ -61,7 +76,12 @@ export function Service() {
               já estão suscetíveis a cáries e outros problemas, por isso é
               preciso visitar um profissional especializado com regularidade.
             </CardDescription>
-            <Button>Saber mais</Button>
+            <Link to="https://wa.me/" target="_blank" rel="noreferrer">
+              <Button>
+                <ButtonText>Saber mais</ButtonText>
+                <FaArrowRight />
+              </Button>
+            </Link>
           </CardContainer>
 
           <CardContainer>
@@ -75,7 +95,12 @@ export function Service() {
               prótese feita sob medida, fixada no implante por meio de
               parafusos.
             </CardDescription>
-            <Button>Saber mais</Button>
+            <Link to="https://wa.me/" target="_blank" rel="noreferrer">
+              <Button>
+                <ButtonText>Saber mais</ButtonText>
+                <FaArrowRight />
+              </Button>
+            </Link>
           </CardContainer>
 
           <CardContainer>
@@ -88,7 +113,12 @@ export function Service() {
               faltantes. Já no caso da prótese total, é feita a reposição de
               toda a arcada dentária.
             </CardDescription>
-            <Button>Saber mais</Button>
+            <Link to="https://wa.me/" target="_blank" rel="noreferrer">
+              <Button>
+                <ButtonText>Saber mais</ButtonText>
+                <FaArrowRight />
+              </Button>
+            </Link>
           </CardContainer>
 
           <CardContainer>
@@ -101,7 +131,12 @@ export function Service() {
               problemas nessa região, alertando sobre como realizar a
               higienização correta com escova e fio dental.
             </CardDescription>
-            <Button>Saber mais</Button>
+            <Link to="https://wa.me/" target="_blank" rel="noreferrer">
+              <Button>
+                <ButtonText>Saber mais</ButtonText>
+                <FaArrowRight />
+              </Button>
+            </Link>
           </CardContainer>
 
           <CardContainer>
@@ -114,7 +149,12 @@ export function Service() {
               consultório ou em casa. O método realizado em consultório é mais
               potente e feito por meio de lasers e luz alógena.
             </CardDescription>
-            <Button>Saber mais</Button>
+            <Link to="https://wa.me/" target="_blank" rel="noreferrer">
+              <Button>
+                <ButtonText>Saber mais</ButtonText>
+                <FaArrowRight />
+              </Button>
+            </Link>
           </CardContainer>
         </CardsContainer>
       </Container>

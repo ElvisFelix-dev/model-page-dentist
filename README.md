@@ -1,5 +1,5 @@
 <div align="center" id="top">
-  <h1>🚧 Construção 🚧</h1>
+  <h1>🚧 Finalizado 🚧</h1>
 </div>
 
 <br />
@@ -25,14 +25,14 @@
 <div align="center">
   <img src="src/assets/pc.png" alt="Logo" width="873" height="501"><br />
   <br />
-  <!--<img src="src/assets/mobile.png" alt="Logo" width="280" height="567"> -->
+  <img src="src/assets/mobile.png" alt="Logo" width="280" height="567">
 </div>
 <br />
 
 <br />Sobre o aplicativo:<br />
 <br />
 
-- Modelo de uma landing-page para dentista 
+- Modelo de uma landing-page para dentista
 
 <p align="right">(<a href="#topo">Para o topo</a>)</p>
 
